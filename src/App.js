@@ -1,24 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import TranslateFake from "./components/TranslateFake/index.jsx";
+import SectionVideos from './components/SectionVideos/index.jsx';
+import NavBar from './components/NavBar/index.jsx';
+import Propuesta from './components/Propuesta/index.jsx';
+import Glosario from './components/Glosario/index.jsx';
+import Palabras from './components/Palabras/index.jsx';
+import Random from './components/Random/index.jsx';
+import TranslateBox from "./components/TranslateBox/index.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <ContextProvider> 
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={<TranslateFake />}
+        />
+
+        <Route
+          path="/propuesta"
+          exact
+          element={<Propuesta />}
+        />
+
+        <Route
+          path="/glosario"
+          exact
+          element={<Glosario />}
+        />
+
+        <Route
+          path="/videos"
+          exact
+          element={<SectionVideos />}
+        />
+
+        <Route
+          path="/palabras"
+          exact
+          element={<Palabras />}
+        />
+
+        <Route
+          path="/random"
+          exact
+          element={<Random />}
+        />
+
+        <Route
+          path="/traductor"
+          exact
+          element={<TranslateBox />}
+        />
+      </Routes>
+    </BrowserRouter>
+    // </ContextProvider>  
   );
 }
 

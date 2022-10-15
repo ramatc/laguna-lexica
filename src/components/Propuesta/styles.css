@@ -1,0 +1,27 @@
+.propuesta-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.propuesta--wrapper,
+.propuesta-img{
+    width: 49%;
+}
+
+.propuesta--wrapper h1{
+    padding-bottom: 25px;
+}
+
+.text-propuesta{
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 17px;
+}
+
+.propuesta-img img{
+    width: 75%;
+}

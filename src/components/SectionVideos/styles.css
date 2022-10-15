@@ -1,0 +1,45 @@
+.video-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+
+.video-card{
+    width: 30%;
+}
+
+.silence-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px 23px 0px 0px;
+}
+
+.silence-button{
+    background-color: white;
+    border-radius: 9px;
+    padding: 17px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 2080px) {
+    .video-card div{
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 2080px) {
+    .video-title{
+        padding: 18px 0px;
+        text-align: center;
+    }
+
+    .video-card div{
+        margin: 0 auto;
+    }
+
+    .video-wrapper{
+        padding-top: 3%;
+    }
+}
