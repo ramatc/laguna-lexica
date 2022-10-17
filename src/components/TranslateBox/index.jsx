@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
+import { useTranslateContext } from '../../context/Context';
 import NavBarFinal from '../NavBar/Final';
 import ModalReal from '../ModalReal';
 import { wordsES1, wordsYA, wordsES2 } from '../../utils/words';
 import './styles.css';
 
 const TranslateBox = () => {
+
+    const {phrase} = useTranslateContext();
+
     const [toYagan, setToYagan] = useState('');
     const [toEs, setToEs] = useState('');
     const [descart, setDescart] = useState('');
-    const [inputValue, setInputValue] = useState("");
+    const [inputValue, setInputValue] = useState(phrase);
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);

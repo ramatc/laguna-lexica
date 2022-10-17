@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslateContext } from '../../context/Context';
 import { Link } from 'react-router-dom';
 import "./styles.css";
 
@@ -6,12 +7,15 @@ const Modal = ({translate}) => {
     const [modalInput, setModalInput] = useState(false); 
     const [modal, setModal] = useState(false); 
 
+    const {addPhrase} = useTranslateContext();
+
     const handleInput = () => {
         setModalInput(!modalInput);
     };
 
     const toggleModal = () => {
         setModal(!modal);
+        addPhrase(translate);
     };
 
     modalInput ? document.body.classList.add('active-modal') : document.body.classList.remove('active-modal');

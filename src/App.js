@@ -1,3 +1,4 @@
+import ContextProvider from './context/Context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TranslateFake from "./components/TranslateFake/index.jsx";
 import SectionVideos from './components/SectionVideos/index.jsx';
@@ -9,53 +10,53 @@ import TranslateBox from "./components/TranslateBox/index.jsx";
 
 function App() {
   return (
-    // <ContextProvider> 
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          exact
-          element={<TranslateFake />}
-        />
+    <ContextProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={<TranslateFake />}
+          />
 
-        <Route
-          path="/propuesta"
-          exact
-          element={<Propuesta />}
-        />
+          <Route
+            path="/propuesta"
+            exact
+            element={<Propuesta />}
+          />
 
-        <Route
-          path="/glosario"
-          exact
-          element={<Glosario />}
-        />
+          <Route
+            path="/glosario"
+            exact
+            element={<Glosario />}
+          />
 
-        <Route
-          path="/videos"
-          exact
-          element={<SectionVideos />}
-        />
+          <Route
+            path="/videos"
+            exact
+            element={<SectionVideos />}
+          />
 
-        <Route
-          path="/palabras"
-          exact
-          element={<Palabras />}
-        />
+          <Route
+            path="/palabras"
+            exact
+            element={<Palabras />}
+          />
 
-        <Route
-          path="/random"
-          exact
-          element={<Random />}
-        />
+          <Route
+            path="/random"
+            exact
+            element={<Random />}
+          />
 
-        <Route
-          path="/traductor"
-          exact
-          element={<TranslateBox />}
-        />
-      </Routes>
-    </BrowserRouter>
-    // </ContextProvider>  
+          <Route
+            path="/traductor"
+            exact
+            element={<TranslateBox />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </ContextProvider>
   );
 }
 
