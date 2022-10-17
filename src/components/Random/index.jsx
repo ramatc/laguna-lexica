@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NavBarFake from '../NavBar/Fake';
 import { Link } from 'react-router-dom';
 import { PALABRAS } from '../../utils/words';
 import './styles.css';
@@ -19,30 +20,34 @@ const Random = () => {
     }  
 
     return (
-    <div className='main-container'>
-        <div className='sub-container'>
-            <h2 className='word-yagan'>{PALABRAS[random].word}</h2>
-            <div className='container-definition'>
-                <p className='definition'>{PALABRAS[random].definition}</p>
-            </div>
-            {
-                count === 10 
-                ? 
-                <Link to="/traductor" className='margin-auto'>
+    <>
+        <NavBarFake/>
+
+        <div className='main-container'>
+            <div className='sub-container'>
+                <h2 className='word-yagan'>{PALABRAS[random].word}</h2>
+                <div className='container-definition'>
+                    <p className='definition'>{PALABRAS[random].definition}</p>
+                </div>
+                {
+                    count === 10 
+                    ? 
+                    <Link to="/traductor" className='margin-auto'>
+                        <button 
+                            className='btn-reformular'>
+                                REFORMULAR
+                        </button>
+                    </Link>
+                    :
                     <button 
+                        onClick={handleAdd}
                         className='btn-reformular'>
                             REFORMULAR
                     </button>
-                </Link>
-                :
-                <button 
-                    onClick={handleAdd}
-                    className='btn-reformular'>
-                        REFORMULAR
-                </button>
-            }
+                }
+            </div>
         </div>
-    </div>
+    </>
     )
 }
 

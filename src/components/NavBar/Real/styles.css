@@ -15,7 +15,8 @@
     float: left;
 }
 
-.navbar ul li a{
+.navbar ul li a,
+.li-fake{
     border: 1px solid #fafafa;
     display: block;
     color: black;
@@ -26,6 +27,18 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-decoration: none;
+}
+
+.li-fake{
+    color: #fafafa;
+}
+
+.logo-fake,
+.li-fake{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;   
 }
 
 .navbar ul li a:hover{
@@ -46,4 +59,8 @@ a {
 
 .active{
     border-bottom: 1px solid black !important;
+}
+
+.final{
+    color: #1f7a8c;
 }

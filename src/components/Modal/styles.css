@@ -36,7 +36,7 @@ body.active-modal {
     line-height: 1.4;
     background: #fff;
     padding: 35px 28px;
-    border-radius: 50px;
+    border-radius: 20px;
     border: 1px solid black;
     max-width: 600px;
     min-width: 300px;

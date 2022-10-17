@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import NavBarReal from '../NavBar/Real';
 import Modal from '../Modal';
 import './styles.css';
 
@@ -11,7 +12,9 @@ const TranslateFake = () => {
     }
 
     return (
-        <div className='main-container'>
+        <>
+            <NavBarReal/>
+            <div className='main-container'>
             <div className='sub-container'>
                 <h2 className='main-title'>DEL YAGÁN AKUPAIA-NGAI:</h2>
                 <h2 className='sub-title'>MARCAR UN ÁRBOL CON UN HACHA PARA ENCONTRARLO MÁS FÁCIL</h2>
@@ -28,6 +31,7 @@ const TranslateFake = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

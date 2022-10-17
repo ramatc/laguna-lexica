@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TranslateFake from "./components/TranslateFake/index.jsx";
 import SectionVideos from './components/SectionVideos/index.jsx';
-import NavBar from './components/NavBar/index.jsx';
 import Propuesta from './components/Propuesta/index.jsx';
 import Glosario from './components/Glosario/index.jsx';
 import Palabras from './components/Palabras/index.jsx';
@@ -12,7 +11,6 @@ function App() {
   return (
     // <ContextProvider> 
     <BrowserRouter>
-      <NavBar />
       <Routes>
         <Route
           path="/"

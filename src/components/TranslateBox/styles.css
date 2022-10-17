@@ -1,0 +1,39 @@
+.main-container-real{
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.sub-container-real{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.main-translate-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.translate--container{
+    width: 25%;
+}
+
+.title-translate{
+    padding: 0px 55px;
+    font-size: 20px;
+    width: 40ch;
+}
+
+.translate{
+    padding: 15px 55px;
+    font-size: 18px;
+}
+
+.discard{
+    border-left: 1px solid black;
+}
