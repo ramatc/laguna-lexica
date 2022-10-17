@@ -1,8 +1,8 @@
 import { createContext, useState, useContext } from 'react';
 
-const CartContext = createContext([]);
+const Context = createContext([]);
 
-export const useTranslateContext = () => useContext(CartContext);
+export const useTranslateContext = () => useContext(Context);
 
 const ContextProvider = ({ children }) => {
 
@@ -13,12 +13,12 @@ const ContextProvider = ({ children }) => {
     }
 
     return (
-        <CartContext.Provider value={{
+        <Context.Provider value={{
             phrase,
             addPhrase,
         }}>
             {children}
-        </CartContext.Provider>
+        </Context.Provider>
     )
 }
 
