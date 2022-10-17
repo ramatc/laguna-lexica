@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 import video1 from '../../assets/videos/video1.mp4';
-// import video2 from '../../assets/videos/video2.mp4';
-// import video3 from '../../assets/videos/video3.mp4';
+import video2 from '../../assets/videos/video2.mp4';
+import video3 from '../../assets/videos/video3.mp4';
 
 //TODO COMPONETIZAR VIDEOS
 const SectionVideos = () => {
@@ -33,7 +33,7 @@ const SectionVideos = () => {
 
                 <div className='video-card'>
                     <ReactPlayer 
-                        url={video1} 
+                        url={video2} 
                         playing={true}
                         volume={1}
                         controls
@@ -45,7 +45,7 @@ const SectionVideos = () => {
 
                 <div className='video-card'>
                     <ReactPlayer 
-                        url={video1} 
+                        url={video3} 
                         playing={true}
                         volume={1}
                         controls

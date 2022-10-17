@@ -35,13 +35,13 @@ const TranslateBox = () => {
             }
         }
 
-        for (let i = 0; i < arrayTranslated.length; i++) {
-            for (let j = 0; j < wordsYA.length; j++) {
-                if (arrayTranslated[i].toLowerCase() === wordsYA[j]) {
-                    arrayTranslatedToEs.push(wordsES2[j]);
-                }
-            }
-        }
+        // for (let i = 0; i < arrayTranslated.length; i++) {
+        //     for (let j = 0; j < wordsYA.length; j++) {
+        //         if (arrayTranslated[i].toLowerCase() === wordsYA[j]) {
+        //             arrayTranslatedToEs.push(wordsES2[j]);
+        //         }
+        //     }
+        // }
 
         setToYagan(arrayTranslated.join(" "));
         setDescart(wordsNoMatch.join(" "));
