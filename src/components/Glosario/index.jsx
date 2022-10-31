@@ -4,6 +4,8 @@ import './styles.css';
 
 const Glosario = () => {
     
+    const LETRAS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+
     const GLOSA = ["enambaia: vegetación corta",
     "ica: duro por congelación",
     "ikaiyagu: quemar un árbol para otra persona",
@@ -1020,25 +1022,29 @@ const Glosario = () => {
     "yéa(söx: cormorán moñudo que principalmente arraiga en los árboles",
     ];
 
-
     return (
         <div>
             <NavBarReal/>
             <h1 className='title-glosario'>GLOSARIO</h1>
+
+            <div className='letras'>
+                {LETRAS.map(letra => <a href={`#${letra}`} key={letra}>{letra}</a>)}
+            </div>
+
             <div className='glosario-container'>
                 <div>
-                    <h2 className='letter'>A</h2>
-                    {GLOSA.map(frase => <p className='quote'>{frase}</p>)}
+                    <h2 className='letter' id='A'>A</h2>
+                    {GLOSA.map((frase, i) => <p className='quote' key={i}>{frase}</p>)}
                 </div>
 
                 <div>
-                    <h2 className='letter'>W</h2>
-                    {GLOSW.map(frase => <p className='quote'>{frase}</p>)}
+                    <h2 className='letter' id='W'>W</h2>
+                    {GLOSW.map((frase, i) => <p className='quote' key={i}>{frase}</p>)}
                 </div>
 
                 <div>
-                    <h2 className='letter'>Y</h2>
-                    {GLOSY.map(frase => <p className='quote'>{frase}</p>)}
+                    <h2 className='letter' id='Y'>Y</h2>
+                    {GLOSY.map((frase, i) => <p className='quote' key={i}>{frase}</p>)}
                 </div>
             </div>
         </div>

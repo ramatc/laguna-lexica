@@ -25,7 +25,6 @@ const SectionVideos = () => {
                         url={video1} 
                         playing={true}
                         volume={1}
-                        controls
                     />
                     <p className='video-title'>Chile paralelo 56 (1964) - Rafael Sánchez</p>
                     <p className='video-description'>Por breves minutos muestra a una familia de Yaganes saliendo a navegar. Rescate fílmico.</p>
@@ -36,7 +35,6 @@ const SectionVideos = () => {
                         url={video2} 
                         playing={true}
                         volume={1}
-                        controls
                     />
                     <p className='video-title'> La última huella (2001) - Paola Castillo</p>
                     <p className='video-description'>Úrsula navega por la Bahía Helada hasta El paso del Indio en busca de Imi, 
@@ -48,7 +46,6 @@ const SectionVideos = () => {
                         url={video3} 
                         playing={true}
                         volume={1}
-                        controls
                     />
                     <p className='video-title'>Tánana (2016) - Alberto Serrano Fillol / Cristóbal Azócar</p>
                     <p className='video-description'>TÁNANA, estar listo para zarpar en lengua yagán, es el regreso de Martín González Calderón 

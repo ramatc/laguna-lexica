@@ -8,3 +8,8 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #fafafa;
 }
+
+html, body {
+    height: 100vh;
+    scroll-behavior: smooth;
+}

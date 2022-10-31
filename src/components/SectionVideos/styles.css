@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 1%;
-    padding-bottom: 250px;
+    height: 100vh;
 }
 
 .video-card{

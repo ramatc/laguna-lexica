@@ -14,8 +14,9 @@ const NavBarReal = () => {
                     </Link>
                     <ul>
                         <li><NavLink to="/propuesta">PROPUESTA</NavLink></li>
+                        <li><NavLink to="/traductor">TRADUCTOR</NavLink></li>
                         <li><NavLink to="/glosario">GLOSARIO</NavLink></li>
-                        {/* <li><NavLink to="/historial">HISTORIAL</NavLink></li> */}
+                        <li><NavLink to="/historial">HISTORIAL</NavLink></li>
                     </ul>
                 </div>
             </nav>
