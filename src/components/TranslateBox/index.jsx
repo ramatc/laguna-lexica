@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useTranslateContext } from '../../context/Context';
 import NavBarFinal from '../NavBar/Real';
 import ModalReal from '../ModalReal';
@@ -36,17 +36,20 @@ const TranslateBox = () => {
 
             if (cont === 0) {
                 wordsNoMatch.push(arrayString[i]);
+                // arrayString.splice(i, 1);
             }
         }
 
-        // for (let i = 0; i < arrayTranslated.length; i++) {
-        //     for (let j = 0; j < wordsYA.length; j++) {
-        //         if (arrayTranslated[i].toLowerCase() === wordsYA[j]) {
-        //             arrayTranslatedToEs.push(wordsES2[j]);
-        //         }
-        //     }
-        // }
+        for (let i = 0; i < arrayTranslated.length; i++) {
+            for (let j = 0; j < wordsYA.length; j++) {
+                if (arrayTranslated[i] === wordsYA[j]) {
+                    arrayTranslatedToEs.push(wordsES2[j]);
+                    j = wordsYA.length;
+                }
+            }
+        }
 
+        // setInputValue(arrayString.join(" "))
         setToYagan(arrayTranslated.join(" "));
         setDescart(wordsNoMatch.join(" "));
         setToEs(arrayTranslatedToEs.join(" "));
@@ -58,6 +61,10 @@ const TranslateBox = () => {
             descarte: descart
         })
     }
+
+    var array = ["a", "b", "c", "d"];
+    var index = 0;
+    array.splice(index, 1); 
 
     return (
         <>
@@ -87,6 +94,18 @@ const TranslateBox = () => {
                         <p className='title-translate'>Oración en español</p>
                         <p className='translate'>{inputValue}</p>
                     </div>
+                    
+                    <div className='translate--container discard'>
+                        <p className='title-translate'>Intraducible</p>
+                        {
+                            descart === ''
+                            ? ''
+                            :                                   
+                            <div style={{ color: 'red' }}>
+                                <p className='translate' style={{ fontWeight: 'bold' }}>{descart}</p>
+                            </div>
+                        }
+                    </div>
 
                     <div className='translate--container'>
                         <p className='title-translate'>Oración en yagán</p>
@@ -96,18 +115,6 @@ const TranslateBox = () => {
                     <div className='translate--container'>
                         <p className='title-translate'>Oración en español</p>
                         <p className='translate'>{toEs}</p>
-                    </div>
-
-                    <div className='translate--container discard'>
-                        <p className='title-translate'>Descarte</p>
-                        {
-                            descart === ''
-                            ? ''
-                            :                                   
-                            <div style={{ color: 'red' }}>
-                                <p className='translate' style={{ fontWeight: 'bold' }}>{descart}</p>
-                            </div>
-                        }
                     </div>
                 </div>
             </div>

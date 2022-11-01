@@ -34,6 +34,6 @@
     font-size: 18px;
 }
 
-.discard{
-    border-left: 1px solid black;
+.discard .title-translate{
+    text-decoration: underline;
 }

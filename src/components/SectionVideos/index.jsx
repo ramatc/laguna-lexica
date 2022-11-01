@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import ReactPlayer from 'react-player'
 import NavBarFake from '../NavBar/Fake';
-import { Link } from 'react-router-dom';
 import './styles.css';
 
 import video1 from '../../assets/videos/video1.mp4';
@@ -10,14 +10,32 @@ import video3 from '../../assets/videos/video3.mp4';
 
 //TODO COMPONETIZAR VIDEOS
 const SectionVideos = () => {
+
+    const [position, setPosition] = useState(1);
+
     return (
         <>  
             <NavBarFake/>
-            <Link to="/random" className='silence-wrapper'>
-                <button className='silence-button'>
-                    Silenciar todos los videos
-                </button>
-            </Link>
+            {
+                position < 3
+                ?
+                <div className={'silence-wrapper'+position}>
+                    <button 
+                        className='silence-button'
+                        onClick={() => setPosition(position+1)}
+                        >
+                        Silenciar todos los videos
+                    </button>
+                </div>
+                :
+                <Link to="/random" className={'silence-wrapper'+position}>
+                    <button 
+                        className='silence-button'
+                        >
+                        Silenciar todos los videos
+                    </button>
+                </Link>
+            }
             
             <div className='video-wrapper'>
                 <div className='video-card'>

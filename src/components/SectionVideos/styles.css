@@ -10,10 +10,42 @@
     width: 30%;
 }
 
-.silence-wrapper{
+.silence-wrapper1{
     display: flex;
     justify-content: flex-end;
     padding: 50px 23px 0px 0px;
+}
+
+.silence-wrapper1 .silence-button{
+    position: relative;
+}
+
+.silence-wrapper2{
+    display: flex;
+    justify-content: center;
+    padding: 4px 23px 0px 0px;
+}
+
+.silence-wrapper2 .silence-button{
+    border-radius: 50%;
+    position: absolute;
+    top: 70%;
+}
+
+.silence-wrapper3{
+    display: flex;
+    justify-content: flex-start;
+    padding: 35px 0px 0px 120px;
+}
+
+.silence-wrapper3 .silence-button{
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
 .silence-button{
