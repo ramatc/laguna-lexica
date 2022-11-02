@@ -10,7 +10,7 @@ const Historial = () => {
     return (
     <>
         <NavBarReal />
-        <div className='main-container-real'>
+        <div className='main-container-real p-60'>
             <h1 className='title-historial'>HISTORIAL</h1>
 
             <div className='historial-list'>

@@ -18,10 +18,11 @@
 
 .text-propuesta{
     text-align: justify;
-    text-justify: inter-word;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .propuesta-img img{
-    width: 75%;
+    width: 67%;
+    display: flex;
+    margin: 0 auto;
 }

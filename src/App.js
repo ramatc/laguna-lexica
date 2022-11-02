@@ -1,14 +1,20 @@
 import ContextProvider from './context/Context';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from "./components/Inicio/index.jsx";
-import TranslateFake from "./components/TranslateFake/index.jsx";
-import SectionVideos from './components/SectionVideos/index.jsx';
 import Propuesta from './components/Propuesta/index.jsx';
-import Glosario from './components/Glosario/index.jsx';
-import Palabras from './components/Palabras/index.jsx';
-import Random from './components/Random/index.jsx';
 import Historial from './components/Historial/index.jsx';
 import TranslateBox from "./components/TranslateBox/index.jsx";
+import Glosario from './components/Glosario/index.jsx';
+// import TranslateFake from "./components/TranslateFake/index.jsx";
+import SectionAudios from './components/SectionAudios/index.jsx';
+import Palabras from './components/Palabras/index.jsx';
+import Busqueda from './components/Busqueda/index.jsx';
+import Random from './components/Random/index.jsx';
+import ClickImg from './components/ClickImg/index.jsx';
+import Botones from './components/Botones/index.jsx';
+import SectionVideos from './components/SectionVideos/index.jsx';
+import ManyImgs from './components/ManyImgs/index.jsx';
+import Texto from './components/Texto/index.jsx';
 
 function App() {
   return (
@@ -34,9 +40,9 @@ function App() {
           />
 
           <Route
-            path="/videos"
+            path="/audios"
             exact
-            element={<SectionVideos />}
+            element={<SectionAudios />}
           />
 
           <Route
@@ -46,9 +52,45 @@ function App() {
           />
 
           <Route
+            path="/busqueda"
+            exact
+            element={<Busqueda />}
+          />
+
+          <Route
             path="/random"
             exact
             element={<Random />}
+          />
+
+          <Route
+            path="/imagen"
+            exact
+            element={<ClickImg />}
+          />
+
+          <Route
+            path="/botones"
+            exact
+            element={<Botones />}
+          />
+
+          <Route
+            path="/videos"
+            exact
+            element={<SectionVideos />}
+          />
+
+          <Route
+            path="/imagenes"
+            exact
+            element={<ManyImgs />}
+          />
+
+          <Route
+            path="/texto"
+            exact
+            element={<Texto />}
           />
 
           <Route

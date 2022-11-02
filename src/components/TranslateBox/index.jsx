@@ -25,10 +25,22 @@ const TranslateBox = () => {
         const wordsNoMatch = [];
 
         for (let i = 0; i < arrayString.length; i++) {
-            let cont = 0;
+            let cont = 0, 
+            lastChar = arrayString[i].length - 1, 
+            stringUnsignedF = '',
+            stringUnsignedL = '';
+
+            if(arrayString[i][0] === '¡' || arrayString[i][0] === '¿'){
+                stringUnsignedF = arrayString[i].slice(1);
+            }
+
+            if(arrayString[i][lastChar] === '!' || arrayString[i][lastChar] === '?' ||  arrayString[i][lastChar] === ',' ||  arrayString[i][lastChar] === '.'){
+                stringUnsignedL = arrayString[i].slice(0, -1);
+            }
+
 
             for (let j = 0; j < wordsES1.length; j++) {
-                if (arrayString[i].toLowerCase() === wordsES1[j]) {
+                if (arrayString[i].toLowerCase() === wordsES1[j] || stringUnsignedF.toLowerCase() === wordsES1[j] || stringUnsignedL.toLowerCase() === wordsES1[j]) {
                     arrayTranslated.push(wordsYA[j]);
                     cont++;
                 }
@@ -61,10 +73,6 @@ const TranslateBox = () => {
             descarte: descart
         })
     }
-
-    var array = ["a", "b", "c", "d"];
-    var index = 0;
-    array.splice(index, 1); 
 
     return (
         <>
