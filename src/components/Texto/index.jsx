@@ -1,8 +1,12 @@
 import React from 'react';
+import NavBar from '../NavBar/Real';
 
 const Texto = () => {
   return (
-    <div>Texto</div>
+    <>
+        <NavBar/>
+        <div>Texto</div>
+    </>
   )
 }
 

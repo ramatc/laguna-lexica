@@ -1,8 +1,12 @@
 import React from 'react';
+import NavBar from '../NavBar/Real';
 
 const Busqueda = () => {
   return (
-    <div>Busqueda</div>
+    <>
+        <NavBar/>
+        <div>Busqueda</div>
+    </>
   )
 }
 

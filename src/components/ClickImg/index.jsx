@@ -1,8 +1,12 @@
 import React from 'react';
+import NavBar from '../NavBar/Fake';
 
 const ClickImg = () => {
   return (
-    <div>ClickImg</div>
+    <>
+        <NavBar/>
+        <div>ClickImg</div>
+    </>
   )
 }
 

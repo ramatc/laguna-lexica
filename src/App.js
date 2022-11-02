@@ -5,16 +5,16 @@ import Propuesta from './components/Propuesta/index.jsx';
 import Historial from './components/Historial/index.jsx';
 import TranslateBox from "./components/TranslateBox/index.jsx";
 import Glosario from './components/Glosario/index.jsx';
-// import TranslateFake from "./components/TranslateFake/index.jsx";
 import SectionAudios from './components/SectionAudios/index.jsx';
 import Palabras from './components/Palabras/index.jsx';
 import Busqueda from './components/Busqueda/index.jsx';
 import Random from './components/Random/index.jsx';
 import ClickImg from './components/ClickImg/index.jsx';
-import Botones from './components/Botones/index.jsx';
+import Botones from './components/BotonesList/index.jsx';
 import SectionVideos from './components/SectionVideos/index.jsx';
 import ManyImgs from './components/ManyImgs/index.jsx';
 import Texto from './components/Texto/index.jsx';
+import Final from './components/Final';
 
 function App() {
   return (
@@ -103,6 +103,12 @@ function App() {
             path="/historial"
             exact
             element={<Historial />}
+          />
+
+          <Route
+            path="/final"
+            exact
+            element={<Final />}
           />
         </Routes>
       </BrowserRouter>

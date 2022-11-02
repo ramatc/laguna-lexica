@@ -1,9 +1,13 @@
 import React from 'react';
+import NavBar from '../NavBar/Real';
 import "./styles.css";
 
 const Palabras = () => {
   return (
-    <div>Palabras</div>
+    <>
+        <NavBar/>
+        <div>Palabras</div>
+    </>
   )
 }
 

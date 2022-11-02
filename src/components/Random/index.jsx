@@ -32,7 +32,7 @@ const Random = () => {
                         {
                             count === 10
                                 ?
-                                <Link to="/" className='margin-auto'>
+                                <Link to="/imagenes" className='margin-auto'>
                                     <button
                                         className='btn-reformular'>
                                         REFORMULAR

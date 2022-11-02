@@ -46,7 +46,7 @@ const Inicio = () => {
                     claras tardes de
                     <TranslateButton 
                         initial={translateHome4}
-                        link='/videos'
+                        link='/random'
                         addTranslateHome={addTranslateHome4}
                         wordYA='kísi'
                         wordES='verano'
@@ -55,7 +55,7 @@ const Inicio = () => {
                     alrededor del
                     <TranslateButton 
                         initial={translateHome5}
-                        link='/random'
+                        link='/videos'
                         addTranslateHome={addTranslateHome5}
                         wordYA='pusáki pus(ák,'
                         wordES='fuego,'

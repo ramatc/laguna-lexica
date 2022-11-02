@@ -1,0 +1,22 @@
+.audio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+.audio-card{
+    width: 30%;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-description{
+    padding-top: 10px;
+}
+
+.text-audios{
+    text-align: center;
+    padding-top: 20px;
+}

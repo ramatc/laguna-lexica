@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarReal from '../NavBar/Real';
+import NavBar from '../NavBar/Real';
 import './styles.css';
 
 import propuesta from '../../assets/images/propuesta-color.png';
@@ -7,7 +7,7 @@ import propuesta from '../../assets/images/propuesta-color.png';
 const Propuesta = () => {
   return (
     <>
-        <NavBarReal/>
+        <NavBar/>
         <div className='propuesta-wrapper'>
             <div className='propuesta--wrapper'>
                 <h1>PROPUESTA</h1>

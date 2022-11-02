@@ -1,0 +1,17 @@
+.main-btn-container{
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-btn{
+    background-color: white;
+    border-radius: 9px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 17%;
+    margin-bottom: 40px;
+}
+

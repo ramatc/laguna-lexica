@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslateContext } from '../../context/Context';
-import NavBarFinal from '../NavBar/Real';
+import NavBar from '../NavBar/Real';
 import ModalReal from '../ModalReal';
 import { wordsES1, wordsYA, wordsES2 } from '../../utils/words';
 import './styles.css';
@@ -76,7 +76,7 @@ const TranslateBox = () => {
 
     return (
         <>
-            <NavBarFinal/>
+            <NavBar/>
             <div className='main-container-real'>
                 <div className='sub-container-real'>
                     <h2 className='main-title'>DEL YAGÁN AKUPAIA-NGAI:</h2>
