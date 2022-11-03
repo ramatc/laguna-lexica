@@ -21,6 +21,7 @@ const Glosario = () => {
                         {letters.map((frase, i) => <p className='quote' key={i}>{frase}</p>)}
                     </div>
                 )}
+                <p className='last-update'>Última actualización: 4 de Noviembre de 2022</p>
             </div>
         </div>
     )

@@ -7,7 +7,9 @@ import TranslateBox from "./components/TranslateBox/index.jsx";
 import Glosario from './components/Glosario/index.jsx';
 import SectionAudios from './components/SectionAudios/index.jsx';
 import Palabras from './components/Palabras/index.jsx';
-import Busqueda from './components/Busqueda/index.jsx';
+import Busqueda01 from './components/Busqueda/Busqueda01/index.jsx';
+import Busqueda02 from './components/Busqueda/Busqueda02/index.jsx';
+import Busqueda03 from './components/Busqueda/Busqueda03/index.jsx';
 import Random from './components/Random/index.jsx';
 import ClickImg from './components/ClickImg/index.jsx';
 import Botones from './components/BotonesList/index.jsx';
@@ -52,9 +54,21 @@ function App() {
           />
 
           <Route
-            path="/busqueda"
+            path="/pesca"
             exact
-            element={<Busqueda />}
+            element={<Busqueda01 />}
+          />
+
+          <Route
+            path="/tiempo"
+            exact
+            element={<Busqueda02 />}
+          />
+
+          <Route
+            path="/anclaje"
+            exact
+            element={<Busqueda03 />}
           />
 
           <Route

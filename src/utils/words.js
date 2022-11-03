@@ -4,43 +4,31 @@ export const wordsES2 = ["qué", "que", "yo", "brisa", "aire", "fuego", "calor",
 
 export const PALABRAS = [
     {
-        word: 'akêamana',
-        definition: 'Buscar un árbol o tronco probándolo con cuña y martillo para ver si se parte bien'
-    },
-    {
-        word: 'iûaian-a',
-        definition: 'buscar unos tipos de hongos que están escondidos'
-    },
-    {
         word: 'alöngãmata',
         definition: 'Ver y dejar un árbol cargado de hongos, para encontrarlo en otra ocasión'
     },
     {
+        word: 'atux-teki',
+        definition: 'Encontrar mientras se rema. Encontrarse con cualquier cosa cuando se va en canoa'
+    },
+    {
+        word: 'tstekit-ágú',
+        definition: 'Encontrar algo y entregarlo'
+    },
+    {
+        word: 'tsténu-g',
+        definition: 'Buscar pero no observar aunque lo que uno busca se encuentra en el lugar en el que está buscando, buscar y fallar en encontrar'
+    },
+    {
+        word: 'teka-yágú',
+        definition: 'Encontrar algo que le pertenece a otra persona'
+    },
+    {
+        word: 'ûun-dãranata',
+        definition: 'Recorrer o dar vueltas para encontrar algo'
+    },
+    {
         word: 'amia',
-        definition: 'Dibujar con los dedos sobre cualquier cosa para dejar sus marcas, dibujar, marcar'
-    },
-    {
-        word: 'yïya',
-        definition: 'dejar el encla, pero luego irse directamente'
-    },
-    {
-        word: 't-gul-ata',
-        definition: 'caracoles que dejaron los cangrejos'
-    },
-    {
-        word: 'wöskösan-ía',
-        definition: 'estar ocupado juntando cosas para poder guardarlas de forma segura'
-    },
-    {
-        word: 'tstútai-ápú',
-        definition: 'darle una casata a una persona para que la use para guardar cosas'
-    },
-    {
-        word: 'asata',
-        definition: ' Llevar fuera o lejos, como la marea cualquier objeto suelto en la orilla, o barco a la deriva en el mar, o como la corriente de un río hace cualquier objeto en su poder'
-    },
-    {
-        word: 'anga-mölãkû',
-        definition: 'tirar cosas así no se pierden'
+        definition: 'Dibujar con los dedos sobre cualquier cosa para dejar sus marcas'
     }
 ]  

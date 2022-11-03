@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
+import { Link } from 'react-router-dom';
 import NavBar from '../NavBar/Fake';
 import './styles.css'
 
@@ -57,7 +58,9 @@ const SectionAudios = () => {
             </div>
         </div>
 
-        <p className='text-audios'>La definición de esa palabra (estas palabras dependen del input)</p>
+        <Link to='/palabras'>
+            <p className='text-audios'>La definición de esa palabra (estas palabras dependen del input)</p>
+        </Link>
     </>
   )
 }

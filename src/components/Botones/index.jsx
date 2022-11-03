@@ -2,13 +2,13 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 
-const Botones = ({boton, random}) => {
+const Botones = ({boton}) => {
     const {id, definition} = boton;
     const [hidden, setHidden] = useState('');
     const navigate = useNavigate();
 
     const handleClick = () => {
-        if(id !== random){
+        if(id !== 11){
             setHidden('hidden');
         }else{
             setTimeout(function(){

@@ -8,7 +8,7 @@
 .sub-container-real{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .main-translate-container{
@@ -32,6 +32,7 @@
 .translate{
     padding: 15px 55px;
     font-size: 18px;
+    height: 200px;
 }
 
 .main-container{
@@ -79,4 +80,17 @@
 
 .fake-input:focus {
     outline: none;
+}
+
+.last-update{
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.ch-65{
+    width: 80ch;
+    margin: 0 auto;
+    padding-bottom: 70px;
 }

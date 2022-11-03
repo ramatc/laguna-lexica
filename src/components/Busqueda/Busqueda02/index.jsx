@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../NavBar/Real';
+import NavBar from '../../NavBar/Fake';
 
 const Busqueda = () => {
   return (

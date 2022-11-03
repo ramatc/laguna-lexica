@@ -1,0 +1,16 @@
+.word-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 150px;
+}
+
+.word-card{
+    width: 100%;
+    margin-bottom: 75px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}

@@ -1,3 +1,64 @@
+
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 23px;
+    border: 2px solid black;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.195);
+}
+
+.modal-content {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #fff;
+    padding: 35px 28px;
+    border-radius: 20px;
+    border: 1px solid black;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.modal-content button{
+    padding: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 14px;
+    margin: 0px 30px;
+    border-bottom: 1px solid white;
+}
+
+.modal-content button:hover{
+    border-bottom: 1px solid black;
+}
+
 .btn-modal-real{
     background-color: #1f7a8c;
     color: white;
