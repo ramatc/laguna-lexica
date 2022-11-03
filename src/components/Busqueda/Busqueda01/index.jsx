@@ -128,7 +128,7 @@ const Palabras = () => {
     return (
         <div className='ht-100'>  
             <NavBar/>
-            <p className='search-text'>Seleccioná la imagen que represente un...</p>
+            <p className='search-text'>Seleccioná las imágenes que contengan elementos de pesca</p>
             <div className='search-wrapper'>
                 <div className={`search-card ${imgA > 0 ? 'selected' : 'no-selected'}`}>
                     <img 

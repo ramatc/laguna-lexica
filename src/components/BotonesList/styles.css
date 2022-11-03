@@ -14,5 +14,10 @@
     width: 17%;
     margin-bottom: 40px;
     height: 100px;
+    transition: background-color .6s ease;
+}
+
+.main-btn:hover{
+    background-color: rgba(128, 128, 128, 0.309);
 }
 

@@ -26,9 +26,10 @@ const SectionVideos = () => {
                         >
                         Silenciar todos los videos
                     </button>
+
                 </div>
                 :
-                <Link to="/random" className={'silence-wrapper'+position}>
+                <Link to="/final" className={'silence-wrapper'+position}>
                     <button 
                         className='silence-button'
                         >

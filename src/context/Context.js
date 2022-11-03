@@ -8,6 +8,7 @@ const ContextProvider = ({ children }) => {
 
     const [phrase, setPhrase] = useState('');
     const [historial, setHistorial] = useState([]);
+    const [road, setRoad] = useState(0);
     const [translateHome1, setTranslateHome1] = useState(0);
     const [translateHome2, setTranslateHome2] = useState(0);
     const [translateHome3, setTranslateHome3] = useState(0);
@@ -49,6 +50,7 @@ const ContextProvider = ({ children }) => {
 
     const addTranslateHome2 = () => {
         setTranslateHome2(translateHome2 + 1);
+        setRoad(0);
 
         if (translateHome1 > 0) {
             setTranslateHome1(translateHome1 + 1);
@@ -121,6 +123,7 @@ const ContextProvider = ({ children }) => {
 
     const addTranslateHome5 = () => {
         setTranslateHome5(translateHome5 + 1);
+        setRoad(1);
 
         if (translateHome1 > 0) {
             setTranslateHome1(translateHome1 + 1);
@@ -145,6 +148,7 @@ const ContextProvider = ({ children }) => {
 
     const addTranslateHome6 = () => {
         setTranslateHome6(translateHome6 + 1);
+        setRoad(2);
 
         if (translateHome1 > 0) {
             setTranslateHome1(translateHome1 + 1);
@@ -177,6 +181,7 @@ const ContextProvider = ({ children }) => {
             translateHome4,
             translateHome5,
             translateHome6,
+            road,
             addPhrase,
             addHistorial,
             addTranslateHome1,
