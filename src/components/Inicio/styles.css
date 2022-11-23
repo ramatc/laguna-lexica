@@ -1,6 +1,9 @@
 .home-container{
     min-height: 110vh;
-    /* background-image: url("C:\Users\Ramiro\Desktop\workspace\laguna-lexica\src\assets\images\fondo.png"); */
+}
+
+.bgi{
+    background-image: url("C:\Users\Ramiro\Desktop\workspace\laguna-lexica\src\assets\images\fondo.png");
 }
 
 .home-sub-container{

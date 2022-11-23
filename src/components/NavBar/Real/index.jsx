@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useTranslateContext } from '../../../context/Context';
 import './styles.css';
 
 const NavBarReal = () => {
+    
+    const {bgClass} = useTranslateContext();
+    
     return (
-        <header>
+        <header className={bgClass ? 'header' : ''}>
             <nav>
                 <div className='navbar'>
                     <Link to="/">

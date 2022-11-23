@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 100px;
+    padding-top: 75px;
 }
 
 .audio-card{
@@ -10,9 +10,23 @@
     margin-bottom: 75px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.text-audios{
+.main-text-audio{
+    padding-top: 50px;
     text-align: center;
-    padding-top: 20px;
+    font-size: 24px;
+}
+
+.text-audio{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.text-audio:hover{
+    color: #1c3c48;
 }

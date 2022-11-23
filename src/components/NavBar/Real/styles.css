@@ -61,3 +61,11 @@ a {
 .active{
     border-bottom: 1px solid black !important;
 }
+
+.header{
+    background-color: #e6e6e6;
+}
+
+.header .navbar ul li a, .li-fake{
+    border: 1px solid #e6e6e6;
+}

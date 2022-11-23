@@ -5,14 +5,17 @@ import NavBarReal from '../NavBar/Real';
 import './styles.css';
 
 const Inicio = () => {
-
     const {translateHome1, translateHome2, translateHome3, translateHome4, translateHome5, translateHome6, translateHome7, translateHome8, translateHome9,
-        addTranslateHome1, addTranslateHome2, addTranslateHome3, addTranslateHome4, addTranslateHome5, addTranslateHome6, addTranslateHome7, addTranslateHome8, addTranslateHome9} = useTranslateContext();
+        addTranslateHome1, addTranslateHome2, addTranslateHome3, addTranslateHome4, addTranslateHome5, addTranslateHome6, addTranslateHome7, addTranslateHome8, addTranslateHome9,
+        bgClass} = useTranslateContext();
+
+
+    bgClass ? document.body.classList.add('bgi') : document.body.classList.remove('bgi');
     
     return (
         <>
             <NavBarReal/>
-            <div className='home-container'>
+            <div className={'home-container'}>
                 <div className='home-sub-container'>
                     <h2 className='title-inicio mg-auto'>Laguna Léxica invita a un recorrido no lineal a través de la lengua muerta yagán. En un intento por evitar su extinción, esperamos que esta obra le rinda homenaje en sus últimos años de vida.</h2>
                     <p className='texto p-50'>
