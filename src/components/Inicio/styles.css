@@ -1,3 +1,16 @@
+.home-container{
+    min-height: 110vh;
+    /* background-image: url("C:\Users\Ramiro\Desktop\workspace\laguna-lexica\src\assets\images\fondo.png"); */
+}
+
+.home-sub-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
 .title-inicio,
 .subtitle-inicio{
     width: 100%;
@@ -51,7 +64,7 @@
     height: 100%;
     position: absolute;
     width: 0;
-    animation: machine 3s steps(64);
+    animation: machine 3s steps(50);
     overflow: hidden;
 }
 

@@ -55,7 +55,7 @@ const ManyImgs = () => {
 
         setTimeout(function(){
             navigate('/botones');
-        }, 20000);
+        }, 15000);
     }
 
     return (

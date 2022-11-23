@@ -60,13 +60,13 @@ function App() {
           />
 
           <Route
-            path="/tiempo"
+            path="/territorio"
             exact
             element={<Busqueda02 />}
           />
 
           <Route
-            path="/anclaje"
+            path="/navegar"
             exact
             element={<Busqueda03 />}
           />

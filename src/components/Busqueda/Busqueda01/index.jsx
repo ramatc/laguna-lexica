@@ -112,7 +112,7 @@ const Palabras = () => {
                 setImgG(0);
                 setImgH(0);
                 setImgI(0);
-                alert("Error");
+                alert("Incorrecto");
             }
             // else {
             //     document.getElementById("mensaje").innerHTML = "¡Error!";

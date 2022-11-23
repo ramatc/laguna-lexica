@@ -96,8 +96,6 @@ const Palabras = () => {
         setTimeout (()=> {
             setLoading('not-loading');
             if (imgA > 0 && imgB === 0 && imgC === 0 && imgD === 0 && imgE > 0 && imgF === 0 && imgG === 0 && imgH === 0 && imgI > 0){
-                // document.getElementById("mensaje").style.color = "green";
-                // document.getElementById("mensaje").innerHTML = "¡Aprobado!";
                 setTimeout (()=>{
                     navigate('/final');
                 }, .300);
@@ -111,14 +109,8 @@ const Palabras = () => {
                 setImgG(0);
                 setImgH(0);
                 setImgI(0);
-                alert("Error");
+                alert("Incorrecto");
             }
-            // else {
-            //     document.getElementById("mensaje").innerHTML = "¡Error!";
-            //     setTimeout (()=>{
-            //         document.getElementById("mensaje").innerHTML = "";
-            //     }, 3000);
-            // }
         }, 2000);
     };
 

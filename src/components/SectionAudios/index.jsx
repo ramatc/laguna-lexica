@@ -22,20 +22,20 @@ const SectionAudios = () => {
                 autoPlay
                 controls
                 />
+                <p>lusha(rojo)</p>
             </div>
 
             <div className='audio-card'>
                 <ReactAudioPlayer
                 src={audio2}
-                // autoPlay
                 controls
                 />
+                <p>lusha(rojo)</p>
             </div>
 
             <div className='audio-card'>
                 <ReactAudioPlayer
                 src={audio3}
-                // autoPlay
                 controls
                 />
             </div>
@@ -43,7 +43,6 @@ const SectionAudios = () => {
             <div className='audio-card'>
                 <ReactAudioPlayer
                 src={audio4}
-                // autoPlay
                 controls
                 />
             </div>
@@ -51,7 +50,6 @@ const SectionAudios = () => {
             <div className='audio-card'>
                 <ReactAudioPlayer
                 src={audio5}
-                // autoPlay
                 controls
                 />
             </div>
@@ -59,7 +57,6 @@ const SectionAudios = () => {
             <div className='audio-card'>
                 <ReactAudioPlayer
                 src={audio6}
-                // autoPlay
                 controls
                 />
             </div>

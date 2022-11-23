@@ -12,12 +12,12 @@ const Palabras = () => {
                 PESCA
             </Link>
 
-            <Link to='/tiempo' className='word-card'>
-                TIEMPO
+            <Link to='/territorio' className='word-card'>
+                TERRITORIO
             </Link>
 
-            <Link to='/anclaje' className='word-card'>
-                ANCLAJE
+            <Link to='/navegar' className='word-card'>
+                NAVEGAR
             </Link>
         </div>
     </div>
