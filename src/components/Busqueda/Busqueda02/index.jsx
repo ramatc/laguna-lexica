@@ -117,7 +117,7 @@ const Palabras = () => {
     return (
         <div className='ht-100'>  
             <NavBar/>
-            <p className='search-text'>Seleccioná los mapas que no representen territorios habitados por yaganes</p>
+            <p className='search-text'>Seleccioná los 3 mapas que no representen territorios habitados por yaganes</p>
             <div className='search-wrapper'>
                 <div className={`search-card ${imgA > 0 ? 'selected' : 'no-selected'}`}>
                     <img 

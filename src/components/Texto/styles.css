@@ -1,7 +1,7 @@
 .large-text{
     font-size: 18px;
     text-align: justify;
-    padding: 25px 0px;
+    padding: 25px;
     color: rgba(0, 0, 0, 0.7);
 }
 
@@ -9,4 +9,21 @@
     color: #1f7a8c;
     cursor: pointer;
     font-weight: bold;
+}
+
+.no-visible{
+    visibility: hidden;
+    display: none;
+}
+
+.visible{
+    visibility: visible;
+    display: block;
+}
+
+.final-text{
+    text-align: center;
+    font-size: 24px;
+    margin: 0 auto;
+    padding-top: 350px;
 }

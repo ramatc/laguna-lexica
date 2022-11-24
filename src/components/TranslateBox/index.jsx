@@ -79,8 +79,6 @@ const TranslateBox = () => {
             <NavBar/>
             <div className='main-container-real'>
                 <div className='sub-container-real'>
-                    {/* <h2 className='main-title'>DEL YAGÁN AKUPAIA-NGAI:</h2> */}
-                    {/* <h2 className='sub-title'>MARCAR UN ÁRBOL CON UN HACHA PARA ENCONTRARLO MÁS FÁCIL</h2> */}
                     <p className='question ch-65'>El glosario se basa principalemnte en el diccionario realizado por Thomas Bridges, 1865. Hasta el momento no se han traducido la totalidad de los términos, por lo que es probable que haya palabras que todavía no tengan una traducción disponible. </p>
                     <div className="translate-container">
                         <input
@@ -126,7 +124,7 @@ const TranslateBox = () => {
                     </div>
                 </div>
             </div>
-            <p className='last-update'>Última actualización: 4 de Noviembre de 2022</p>
+            <p className='last-update'>Última actualización: 24 de Noviembre de 2022</p>
         </>
     )
 }

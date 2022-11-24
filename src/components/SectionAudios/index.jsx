@@ -20,9 +20,9 @@ const SectionAudios = () => {
     return (
     <>  
         <NavBar/>
-        <p className='main-text-audio'>Seleccioná la palabra que no corresponde a la serie</p>
+        <p className='main-text-audio' data-aos="fade-up">Seleccioná la palabra que no corresponde a la serie</p>
         <div className='audio-wrapper'>
-            <div className='audio-card'>
+            <div className='audio-card' data-aos="fade-up" data-aos-duration="1000">
                 <ReactAudioPlayer
                 src={audio1}
                 autoPlay
@@ -31,7 +31,7 @@ const SectionAudios = () => {
                 <p className='text-audio' onClick={() => alertAudio()}>alaköna (observar)</p>
             </div>
 
-            <div className='audio-card'>
+            <div className='audio-card' data-aos="fade-up" data-aos-duration="1200">
                 <ReactAudioPlayer
                 src={audio2}
                 autoPlay
@@ -42,7 +42,7 @@ const SectionAudios = () => {
                 </Link>
             </div>
 
-            <div className='audio-card'>
+            <div className='audio-card' data-aos="fade-up" data-aos-duration="1400">
                 <ReactAudioPlayer
                 src={audio3}
                 autoPlay
@@ -51,7 +51,7 @@ const SectionAudios = () => {
                 <p className='text-audio' onClick={() => alertAudio()}>miatána (sonreír)</p>
             </div>
 
-            <div className='audio-card'>
+            <div className='audio-card' data-aos="fade-up" data-aos-duration="1600">
                 <ReactAudioPlayer
                 src={audio4}
                 autoPlay
@@ -60,7 +60,7 @@ const SectionAudios = () => {
                 <p className='text-audio' onClick={() => alertAudio()}>tapóin (padre)</p>
             </div>
 
-            <div className='audio-card'>
+            <div className='audio-card' data-aos="fade-up" data-aos-duration="1800">
                 <ReactAudioPlayer
                 src={audio5}
                 autoPlay
@@ -69,7 +69,7 @@ const SectionAudios = () => {
                 <p className='text-audio' onClick={() => alertAudio()}>tön (tierra)</p>
             </div>
 
-            <div className='audio-card'>
+            <div className='audio-card' data-aos="fade-up" data-aos-duration="2000">
                 <ReactAudioPlayer
                 src={audio6}
                 autoPlay
@@ -80,6 +80,6 @@ const SectionAudios = () => {
         </div>
     </>
     )
-    }
+}
 
 export default SectionAudios;

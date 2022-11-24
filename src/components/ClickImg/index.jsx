@@ -1,13 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavBar from '../NavBar/Fake';
+import './styles.css'
 
 const ClickImg = () => {
-  return (
+
+return (
     <>
         <NavBar/>
-        <div>ClickImg</div>
+        <Link to={'/texto'}>
+            hola
+        </Link>
     </>
-  )
+    )
 }
 
 export default ClickImg;

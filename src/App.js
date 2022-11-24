@@ -17,117 +17,129 @@ import SectionVideos from './components/SectionVideos/index.jsx';
 import ManyImgs from './components/ManyImgs/index.jsx';
 import Texto from './components/Texto/index.jsx';
 import Final from './components/Final';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-  return (
-    <ContextProvider>
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            exact
-            element={<Inicio />}
-          />
 
-          <Route
-            path="/propuesta"
-            exact
-            element={<Propuesta />}
-          />
+    setTimeout(() => {
+        AOS.refreshHard();
+    }, 200);
+    AOS.init({
+        once: true,
+        offset: 200,
+        duration: 800,
+    });
 
-          <Route
-            path="/glosario"
-            exact
-            element={<Glosario />}
-          />
+    return (
+        <ContextProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/"
+                        exact
+                        element={<Inicio />}
+                    />
 
-          <Route
-            path="/audios"
-            exact
-            element={<SectionAudios />}
-          />
+                    <Route
+                        path="/propuesta"
+                        exact
+                        element={<Propuesta />}
+                    />
 
-          <Route
-            path="/palabras"
-            exact
-            element={<Palabras />}
-          />
+                    <Route
+                        path="/glosario"
+                        exact
+                        element={<Glosario />}
+                    />
 
-          <Route
-            path="/pesca"
-            exact
-            element={<Busqueda01 />}
-          />
+                    <Route
+                        path="/audios"
+                        exact
+                        element={<SectionAudios />}
+                    />
 
-          <Route
-            path="/territorio"
-            exact
-            element={<Busqueda02 />}
-          />
+                    <Route
+                        path="/palabras"
+                        exact
+                        element={<Palabras />}
+                    />
 
-          <Route
-            path="/navegar"
-            exact
-            element={<Busqueda03 />}
-          />
+                    <Route
+                        path="/pesca"
+                        exact
+                        element={<Busqueda01 />}
+                    />
 
-          <Route
-            path="/random"
-            exact
-            element={<Random />}
-          />
+                    <Route
+                        path="/territorio"
+                        exact
+                        element={<Busqueda02 />}
+                    />
 
-          <Route
-            path="/imagenes"
-            exact
-            element={<ManyImgs />}
-          />
+                    <Route
+                        path="/navegar"
+                        exact
+                        element={<Busqueda03 />}
+                    />
 
-          <Route
-            path="/botones"
-            exact
-            element={<Botones />}
-          />
+                    <Route
+                        path="/random"
+                        exact
+                        element={<Random />}
+                    />
 
-          <Route
-            path="/videos"
-            exact
-            element={<SectionVideos />}
-          />
+                    <Route
+                        path="/imagenes"
+                        exact
+                        element={<ManyImgs />}
+                    />
 
-          <Route
-            path="/imagen"
-            exact
-            element={<ClickImg />}
-          />
+                    <Route
+                        path="/botones"
+                        exact
+                        element={<Botones />}
+                    />
 
-          <Route
-            path="/texto"
-            exact
-            element={<Texto />}
-          />
+                    <Route
+                        path="/videos"
+                        exact
+                        element={<SectionVideos />}
+                    />
 
-          <Route
-            path="/traductor"
-            exact
-            element={<TranslateBox />}
-          />
+                    <Route
+                        path="/imagen"
+                        exact
+                        element={<ClickImg />}
+                    />
 
-          <Route
-            path="/historial"
-            exact
-            element={<Historial />}
-          />
+                    <Route
+                        path="/texto"
+                        exact
+                        element={<Texto />}
+                    />
 
-          <Route
-            path="/final"
-            exact
-            element={<Final />}
-          />
-        </Routes>
-      </BrowserRouter>
-    </ContextProvider>
-  );
+                    <Route
+                        path="/traductor"
+                        exact
+                        element={<TranslateBox />}
+                    />
+
+                    <Route
+                        path="/historial"
+                        exact
+                        element={<Historial />}
+                    />
+
+                    <Route
+                        path="/final"
+                        exact
+                        element={<Final />}
+                    />
+                </Routes>
+            </BrowserRouter>
+        </ContextProvider>
+    );
 }
 
 export default App;
