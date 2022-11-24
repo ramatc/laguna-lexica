@@ -13,7 +13,7 @@ const Final = () => {
     return (
         <>
             <NavBar />
-            <div className='ht-100'>
+            <div className='ht-100 bg-fa'>
                 <div className='main-container'>
                     <div className='sub-container'>
                         <h2 className='word-yagan'>{CAMINOS[road].title}:</h2>

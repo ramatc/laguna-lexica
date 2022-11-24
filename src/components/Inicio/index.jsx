@@ -15,7 +15,7 @@ const Inicio = () => {
     return (
         <>
             <NavBarReal/>
-            <div className={'home-container'}>
+            <div className='home-container'>
                 <div className='home-sub-container'>
                     <h2 className='title-inicio mg-auto'>Laguna Léxica invita a un recorrido no lineal a través de la lengua muerta yagán. En un intento por evitar su extinción, esperamos que esta obra le rinda homenaje en sus últimos años de vida.</h2>
                     <p className='texto p-50'>

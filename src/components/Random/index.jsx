@@ -22,7 +22,7 @@ const Random = () => {
     return (
         <>
             <NavBarFake />
-            <div className='ht-100'>
+            <div className='ht-100 bg-fa'>
                 <div className='main-container'>
                     <div className='sub-container'>
                         <h2 className='word-yagan'>{PALABRAS[random].word}</h2>

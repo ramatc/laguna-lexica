@@ -7,6 +7,10 @@
     padding: 20px;
 }
 
+.fake-nav{
+    background-color: #fafafa;
+}
+
 .navbar ul{
     list-style-type: none;
 }

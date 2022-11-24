@@ -55,30 +55,32 @@ const ManyImgs = () => {
 
         setTimeout(function(){
             navigate('/botones');
-        }, 15000);
+        }, 13000);
     }
 
     return (
         <>
             <NavBar/>
-            <div className='main-container'>
-                <div className='sub-container'>
-                    {
-                        !click 
-                        ? 
-                        <img 
-                            style={{width: '500px'}}
-                            alt='Imagen Yaganes'
-                            onClick={() => handleImages()}
-                            src={IMAGES[random]}
-                        />
-                        :
-                        <img 
-                            style={{width: '500px'}}
-                            alt='Imagen Yaganes'
-                            src={IMAGES[random]}
-                        />
-                    }
+            <div className='ht-100 bg-fa'>
+                <div className='main-container'>
+                    <div className='sub-container'>
+                        {
+                            !click 
+                            ? 
+                            <img 
+                                style={{width: '500px'}}
+                                alt='Imagen Yaganes'
+                                onClick={() => handleImages()}
+                                src={IMAGES[random]}
+                            />
+                            :
+                            <img 
+                                style={{width: '500px'}}
+                                alt='Imagen Yaganes'
+                                src={IMAGES[random]}
+                            />
+                        }
+                    </div>
                 </div>
             </div>
         </>

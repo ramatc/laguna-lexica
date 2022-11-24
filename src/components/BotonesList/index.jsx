@@ -15,10 +15,12 @@ const BotonesList = () => {
     return (
         <>
             <NavBar/>
-            <div className='main-btn-container'>
-                {
-                    BOTONES.map(boton => <Botones boton={boton} key={boton.id}/>)
-                }
+            <div className='ht-100 bg-fa'>
+                <div className='main-btn-container'>
+                    {
+                        BOTONES.map(boton => <Botones boton={boton} key={boton.id}/>)
+                    }
+                </div>
             </div>
         </>
     )

@@ -4,7 +4,7 @@ const NavBarFake = () => {
     return (
         <header>
             <nav>
-                <div className='navbar'>
+                <div className='navbar fake-nav'>
                     <h1 className='logo logo-fake'>
                         LAGUNA LÉXICA
                     </h1>
