@@ -78,9 +78,9 @@ function App() {
           />
 
           <Route
-            path="/imagen"
+            path="/imagenes"
             exact
-            element={<ClickImg />}
+            element={<ManyImgs />}
           />
 
           <Route
@@ -96,9 +96,9 @@ function App() {
           />
 
           <Route
-            path="/imagenes"
+            path="/imagen"
             exact
-            element={<ManyImgs />}
+            element={<ClickImg />}
           />
 
           <Route

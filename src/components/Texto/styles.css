@@ -1,0 +1,12 @@
+.large-text{
+    font-size: 18px;
+    text-align: justify;
+    padding: 25px 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.definition-click{
+    color: #1f7a8c;
+    cursor: pointer;
+    font-weight: bold;
+}

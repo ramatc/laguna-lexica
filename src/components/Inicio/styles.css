@@ -3,7 +3,8 @@
 }
 
 .bgi{
-    background-image: url("C:\Users\Ramiro\Desktop\workspace\laguna-lexica\src\assets\images\fondo.png");
+    background-image: url('../../assets/images/fondo.png');
+    background-size: cover;
 }
 
 .home-sub-container{

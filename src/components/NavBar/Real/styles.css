@@ -66,6 +66,6 @@ a {
     background-color: #e6e6e6;
 }
 
-.header .navbar ul li a, .li-fake{
+.header .navbar ul li a{
     border: 1px solid #e6e6e6;
 }

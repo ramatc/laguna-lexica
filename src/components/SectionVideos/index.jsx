@@ -29,7 +29,7 @@ const SectionVideos = () => {
 
                 </div>
                 :
-                <Link to="/final" className={'silence-wrapper'+position}>
+                <Link to="/imagen" className={'silence-wrapper'+position}>
                     <button 
                         className='silence-button'
                         >
