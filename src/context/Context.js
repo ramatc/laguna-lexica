@@ -6,7 +6,6 @@ export const useTranslateContext = () => useContext(Context);
 
 const ContextProvider = ({ children }) => {
 
-    const [phrase, setPhrase] = useState('');
     const [historial, setHistorial] = useState([]);
     const [road, setRoad] = useState(0);
     const [bgClass, setBgClass] = useState(false);
@@ -20,10 +19,6 @@ const ContextProvider = ({ children }) => {
     const [translateHome7, setTranslateHome7] = useState(0);
     const [translateHome8, setTranslateHome8] = useState(0);
     const [translateHome9, setTranslateHome9] = useState(0);
-
-    const addPhrase = (phrase) => {
-        setPhrase(phrase);
-    }
 
     const addHistorial = (historialItem) => {
         setHistorial([...historial, historialItem]);
@@ -351,7 +346,6 @@ const ContextProvider = ({ children }) => {
 
     return (
         <Context.Provider value={{
-            phrase,
             historial,
             translateHome1,
             translateHome2,
@@ -364,7 +358,6 @@ const ContextProvider = ({ children }) => {
             translateHome9,
             road,
             bgClass,
-            addPhrase,
             addHistorial,
             addTranslateHome1,
             addTranslateHome2,

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useTranslateContext } from '../../context/Context';
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
 import NavBar from '../NavBar/Real';
 import ModalReal from '../ModalReal';
 import { wordsES1, wordsYA, wordsES2 } from '../../utils/words';
@@ -7,12 +7,10 @@ import './styles.css';
 
 const TranslateBox = () => {
 
-    const {phrase, addHistorial} = useTranslateContext();
-
     const [toYagan, setToYagan] = useState('');
     const [toEs, setToEs] = useState('');
     const [descart, setDescart] = useState('');
-    const [inputValue, setInputValue] = useState(phrase);
+    const [inputValue, setInputValue] = useState('');
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
@@ -48,7 +46,6 @@ const TranslateBox = () => {
 
             if (cont === 0) {
                 wordsNoMatch.push(arrayString[i]);
-                // arrayString.splice(i, 1);
             }
         }
 
@@ -61,17 +58,21 @@ const TranslateBox = () => {
             }
         }
 
-        // setInputValue(arrayString.join(" "))
         setToYagan(arrayTranslated.join(" "));
         setDescart(wordsNoMatch.join(" "));
         setToEs(arrayTranslatedToEs.join(" "));
 
-        addHistorial({
+        let historial = {
             frase: inputValue,
-            translate01: toYagan,
-            translate02: toEs,
-            descarte: descart
-        })
+            translate01: arrayTranslated.join(" "),
+            translate02: arrayTranslatedToEs.join(" "),
+            descarte: wordsNoMatch.join(" ")
+        }
+
+        const db = getFirestore();
+        const ordersCollection = collection(db, 'historial');
+        addDoc(ordersCollection, historial)
+            .catch(err => console.log(err))
     }
 
     return (
@@ -124,7 +125,7 @@ const TranslateBox = () => {
                     </div>
                 </div>
             </div>
-            <p className='last-update'>Última actualización: 24 de Noviembre de 2022</p>
+            <p className='last-update'>Última actualización: 25 de Noviembre de 2022</p>
         </>
     )
 }
