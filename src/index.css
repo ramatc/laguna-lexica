@@ -13,3 +13,11 @@ html, body {
     height: 100vh;
     scroll-behavior: smooth;
 }
+
+.ff{
+    font-family: 'Roboto', sans-serif;
+}
+
+.ff h1, .ff h2{
+    font-family: 'Merriweather', serif;
+}

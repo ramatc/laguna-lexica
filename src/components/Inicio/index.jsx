@@ -7,10 +7,11 @@ import './styles.css';
 const Inicio = () => {
     const {translateHome1, translateHome2, translateHome3, translateHome4, translateHome5, translateHome6, translateHome7, translateHome8, translateHome9,
         addTranslateHome1, addTranslateHome2, addTranslateHome3, addTranslateHome4, addTranslateHome5, addTranslateHome6, addTranslateHome7, addTranslateHome8, addTranslateHome9,
-        bgClass} = useTranslateContext();
+        bgClass, ffClass} = useTranslateContext();
 
 
     bgClass ? document.body.classList.add('bgi') : document.body.classList.remove('bgi');
+    ffClass ? document.body.classList.add('ff') : document.body.classList.remove('ff');
     
     return (
         <>

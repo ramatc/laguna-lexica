@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getFirestore, collection, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, getDocs, orderBy, query } from 'firebase/firestore';
 import Loading from '../Loading/Loading';
 import NavBarReal from '../NavBar/Real';
 import './styles.css';
@@ -11,7 +11,7 @@ const Historial = () => {
 
     useEffect(() => {
         const db = getFirestore();
-        const queryCollection = collection(db, 'historial');
+        const queryCollection = query(collection(db, 'historial'), orderBy('date', 'asc'));
         getDocs(queryCollection)
             .then(resp => setHistorial(resp.docs.map(hist => ({ id: hist.id, ...hist.data() }))))
             .catch(err => console.log(err))

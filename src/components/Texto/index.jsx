@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {useNavigate} from 'react-router-dom';
-import NavBar from '../NavBar/Real';
+import NavBar from '../NavBar/Fake';
 import './styles.css';
 
 const Texto = () => {

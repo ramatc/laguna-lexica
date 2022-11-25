@@ -19,8 +19,26 @@
     float: left;
 }
 
+.logo-container{
+    display: flex;
+}
+
+.logo2{
+    text-align: center;
+    margin: auto 0;
+    padding-left: 15px;
+}
+
+.logo h1{
+    color: black;
+}
+
+.logo2 h1{
+    color: #1c3c48;
+}
+
 .logo-img{
-    width: 250px;
+    width: 50px;
 }
 
 .navbar ul li a,
@@ -58,9 +76,6 @@ a {
     text-decoration: none;
 }
 
-.logo{
-    color: black;
-}
 
 .navbar > * {
     padding: 0px 30px;

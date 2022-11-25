@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, Timestamp } from 'firebase/firestore';
 import NavBar from '../NavBar/Real';
 import ModalReal from '../ModalReal';
 import { wordsES1, wordsYA, wordsES2 } from '../../utils/words';
@@ -66,7 +66,8 @@ const TranslateBox = () => {
             frase: inputValue,
             translate01: arrayTranslated.join(" "),
             translate02: arrayTranslatedToEs.join(" "),
-            descarte: wordsNoMatch.join(" ")
+            descarte: wordsNoMatch.join(" "),
+            date: Timestamp.fromDate(new Date())
         }
 
         const db = getFirestore();

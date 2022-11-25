@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import NavBar from '../../NavBar/Fake';
 
 import img1 from '../../../assets/images/busqueda/2/1.jpg';
-import img2 from '../../../assets/images/busqueda/2/2.jpg';
+import img2 from '../../../assets/images/busqueda/2/2.gif';
 import img3 from '../../../assets/images/busqueda/2/3.jpg';
-import img4 from '../../../assets/images/busqueda/2/4.gif';
-import img5 from '../../../assets/images/busqueda/2/5.png';
-import img6 from '../../../assets/images/busqueda/2/6.png';
-import img7 from '../../../assets/images/busqueda/2/7.jpg';
+import img4 from '../../../assets/images/busqueda/2/4.jpg';
+import img5 from '../../../assets/images/busqueda/2/5.jpg';
+import img6 from '../../../assets/images/busqueda/2/6.jpg';
+import img7 from '../../../assets/images/busqueda/2/7.png';
 import img8 from '../../../assets/images/busqueda/2/8.jpg';
 import img9 from '../../../assets/images/busqueda/2/9.jpg';
 import gif from '../../../assets/images/loading.gif';

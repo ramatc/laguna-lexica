@@ -3,20 +3,20 @@ import { Link, NavLink } from 'react-router-dom';
 import { useTranslateContext } from '../../../context/Context';
 import './styles.css';
 
-// import logo from '../../../assets/images/logo.png'
+import logo from '../../../assets/images/logo.png';
 
 const NavBarReal = () => {
     
-    const {bgClass} = useTranslateContext();
+    const {bgClass, ffClass} = useTranslateContext();
     
     return (
         <header className={bgClass ? 'header' : ''}>
             <nav>
                 <div className='navbar'>
-                    <div>
-                        {/* <img src={logo} alt="Logo Laguna Lexica" className='logo-img' /> */}
-                        <Link to="/">
-                            <h1 className='logo'>
+                    <div className='logo-container'>
+                        <img src={logo} alt="Logo Laguna Lexica" className={`logo-img ${ffClass ? '' : 'no-visible'}`}/>
+                        <Link to="/" className={`${ffClass ? 'logo2' : 'logo'}`}> 
+                            <h1>
                             LAGUNA LÉXICA
                             </h1>
                         </Link>
