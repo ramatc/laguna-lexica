@@ -11,7 +11,7 @@ const NavBarReal = () => {
     
     return (
         <header className={bgClass ? 'header' : ''}>
-            <nav>
+            <nav className='title-change'>
                 <div className='navbar'>
                     <div className='logo-container'>
                         <img src={logo} alt="Logo Laguna Lexica" className={`logo-img ${ffClass ? '' : 'no-visible'}`}/>

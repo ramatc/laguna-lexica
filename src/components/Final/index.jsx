@@ -15,7 +15,7 @@ const Final = () => {
             <NavBar />
             <div className='ht-100 bg-fa'>
                 <div className='main-container'>
-                    <div className='sub-container'>
+                    <div className='sub-container final-ff'>
                         <h2 className='word-yagan'>{CAMINOS[road].title}:</h2>
                         <div className='final-container'>
                             <p className='final-definition'>{CAMINOS[road].subtitle}</p>

@@ -18,6 +18,6 @@ html, body {
     font-family: 'Roboto', sans-serif;
 }
 
-.ff h1, .ff h2{
+.ff .title-change{
     font-family: 'Merriweather', serif;
 }

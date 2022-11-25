@@ -8,7 +8,7 @@ const Glosario = () => {
         <div>
             <NavBarReal/>
 
-            <h1 className='title-glosario'>GLOSARIO</h1>
+            <h1 className='title-glosario title-change'>GLOSARIO</h1>
             
             <div className='letras'>
                 {LETRAS.map(letra => <a href={`#${letra}`} key={letra}>{letra}</a>)}

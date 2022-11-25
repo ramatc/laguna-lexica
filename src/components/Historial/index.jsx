@@ -22,7 +22,7 @@ const Historial = () => {
     <>
         <NavBarReal />
         <div className='main-container-real p-60'>
-            <h1 className='title-historial'>HISTORIAL</h1>
+            <h1 className='title-historial title-change'>HISTORIAL</h1>
             {loading ? <Loading/> : 
                 <div className='historial-list'>
                     {historial.map((historial, i) => 

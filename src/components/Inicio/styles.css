@@ -72,9 +72,60 @@
     overflow: hidden;
 }
 
+.marcador1{
+    background-image: url('../../assets/images/marcador-clarito.png');
+    background-size: cover;
+}
+
+.marcador2{
+    background-image: url('../../assets/images/marcador-celeste.png');
+    background-size: cover;
+}
+
+.marcador3{
+    background-image: url('../../assets/images/marcador-marron.png');
+    background-size: cover;
+}
+
+.marcador4{
+    background-image: url('../../assets/images/marcador-rosa.png');
+    background-size: cover;
+}
+
+.marcador5{
+    background-image: url('../../assets/images/marcador-violeta.png');
+    background-size: cover;
+}
+
+.marcador6{
+    background-image: url('../../assets/images/marcador-verde.png');
+    background-size: cover;
+}
+
 .mg-auto{
     margin: 0 auto;
     max-width: 65ch;
+}
+
+.flecha-container{
+    display: flex;
+}
+
+.flecha-container .title-inicio{
+    text-align: left;
+    width: 70%;
+}
+
+.flecha-container .texto{
+    text-align: left;
+    padding-top: 0px;
+}
+
+.flecha{
+    border-right: 3px solid black;
+    padding: 15px 0px;
+    width: 10%;
+    margin-right: 65px;
 }
 
 @keyframes machine {

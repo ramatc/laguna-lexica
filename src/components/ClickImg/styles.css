@@ -14,10 +14,15 @@
     filter: opacity(0.5);
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
+    .images-container img{
+        height: initial;
+    }
+}
+
+@media (min-width: 1800px) {
     .images-container img{
         width: 10%;
-        height: initial;
     }
 }
 

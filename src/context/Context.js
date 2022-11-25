@@ -10,6 +10,7 @@ const ContextProvider = ({ children }) => {
     const [road, setRoad] = useState(0);
     const [bgClass, setBgClass] = useState(false);
     const [ffClass, setFfClass] = useState(false);
+    const [bwClass, setBwClass] = useState(false);
 
 
     const [translateHome1, setTranslateHome1] = useState(0);
@@ -213,6 +214,7 @@ const ContextProvider = ({ children }) => {
     const addTranslateHome6 = () => {
         setTranslateHome6(translateHome6 + 1);
         setRoad(2);
+        setBwClass(true);
 
         if (translateHome1 > 0) {
             setTranslateHome1(translateHome1 + 1);
@@ -362,6 +364,7 @@ const ContextProvider = ({ children }) => {
             road,
             bgClass,
             ffClass,
+            bwClass,
             addHistorial,
             addTranslateHome1,
             addTranslateHome2,

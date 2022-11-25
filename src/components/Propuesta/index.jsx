@@ -10,7 +10,7 @@ const Propuesta = () => {
         <NavBar/>
         <div className='propuesta-wrapper'>
             <div className='propuesta--wrapper'>
-                <h1>PROPUESTA</h1>
+                <h1 className='title-change'>PROPUESTA</h1>
                 <p className='text-propuesta'>
                 Laguna Léxica es un proyecto que busca dar reconocimiento a la cultura de los Yaganes, pueblo que vivió en el archipiélago fueguino entre Argentina y Chile. 
                 Con la recopilación de documentos generados a lo largo de la historia sobre este grupo, buscamos generar un recorrido virtual de estas personas, sus tradiciones, 
