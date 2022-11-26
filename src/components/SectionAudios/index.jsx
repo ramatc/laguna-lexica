@@ -20,62 +20,64 @@ const SectionAudios = () => {
     return (
     <>  
         <NavBar/>
-        <p className='main-text-audio' data-aos="fade-up">Seleccioná la palabra que no corresponde a la serie</p>
-        <div className='audio-wrapper'>
-            <div className='audio-card' data-aos="fade-up" data-aos-duration="1000">
-                <ReactAudioPlayer
-                src={audio1}
-                autoPlay
-                controls
-                />
-                <p className='text-audio' onClick={() => alertAudio()}>alaköna (observar)</p>
-            </div>
+        <div className='ht-100'>
+            <p className='main-text-audio' data-aos="fade-up">Seleccioná la palabra que no corresponde a la serie</p>
+            <div className='audio-wrapper'>
+                <div className='audio-card' data-aos="fade-up" data-aos-duration="1000">
+                    <ReactAudioPlayer
+                    src={audio1}
+                    autoPlay
+                    controls
+                    />
+                    <p className='text-audio' onClick={() => alertAudio()}>alaköna (observar)</p>
+                </div>
 
-            <div className='audio-card' data-aos="fade-up" data-aos-duration="1200">
-                <ReactAudioPlayer
-                src={audio2}
-                autoPlay
-                controls
-                />
-                <Link to='/palabras' style={{width: '100%', color: 'black'}}>
-                    <p className='text-audio'>lusha (rojo)</p>
-                </Link>
-            </div>
+                <div className='audio-card' data-aos="fade-up" data-aos-duration="1200">
+                    <ReactAudioPlayer
+                    src={audio2}
+                    autoPlay
+                    controls
+                    />
+                    <Link to='/palabras' style={{width: '100%', color: 'black'}}>
+                        <p className='text-audio'>lusha (rojo)</p>
+                    </Link>
+                </div>
 
-            <div className='audio-card' data-aos="fade-up" data-aos-duration="1400">
-                <ReactAudioPlayer
-                src={audio3}
-                autoPlay
-                controls
-                />
-                <p className='text-audio' onClick={() => alertAudio()}>miatána (sonreír)</p>
-            </div>
+                <div className='audio-card' data-aos="fade-up" data-aos-duration="1400">
+                    <ReactAudioPlayer
+                    src={audio3}
+                    autoPlay
+                    controls
+                    />
+                    <p className='text-audio' onClick={() => alertAudio()}>miatána (sonreír)</p>
+                </div>
 
-            <div className='audio-card' data-aos="fade-up" data-aos-duration="1600">
-                <ReactAudioPlayer
-                src={audio4}
-                autoPlay
-                controls
-                />
-                <p className='text-audio' onClick={() => alertAudio()}>tapóin (padre)</p>
-            </div>
+                <div className='audio-card' data-aos="fade-up" data-aos-duration="1600">
+                    <ReactAudioPlayer
+                    src={audio4}
+                    autoPlay
+                    controls
+                    />
+                    <p className='text-audio' onClick={() => alertAudio()}>tapóin (padre)</p>
+                </div>
 
-            <div className='audio-card' data-aos="fade-up" data-aos-duration="1800">
-                <ReactAudioPlayer
-                src={audio5}
-                autoPlay
-                controls
-                />
-                <p className='text-audio' onClick={() => alertAudio()}>tön (tierra)</p>
-            </div>
+                <div className='audio-card' data-aos="fade-up" data-aos-duration="1800">
+                    <ReactAudioPlayer
+                    src={audio5}
+                    autoPlay
+                    controls
+                    />
+                    <p className='text-audio' onClick={() => alertAudio()}>tön (tierra)</p>
+                </div>
 
-            <div className='audio-card' data-aos="fade-up" data-aos-duration="2000">
-                <ReactAudioPlayer
-                src={audio6}
-                autoPlay
-                controls
-                />
-                <p className='text-audio' onClick={() => alertAudio()}>yampímata (conversar)</p>
+                <div className='audio-card' data-aos="fade-up" data-aos-duration="2000">
+                    <ReactAudioPlayer
+                    src={audio6}
+                    autoPlay
+                    controls
+                    />
+                    <p className='text-audio' onClick={() => alertAudio()}>yampímata (conversar)</p>
+                </div>
             </div>
         </div>
     </>
