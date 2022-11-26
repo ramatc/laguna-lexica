@@ -10,8 +10,7 @@
 .home-sub-container{
     max-width: 1200px;
     margin: 0 auto;
-    padding-top: 75px;
-    margin: 0px 50px;
+    padding: 75px 80px 0px;
 }
 
 .title-inicio,
@@ -27,7 +26,7 @@
 
 .texto{
     width: 95ch;
-    font-size: 18px;
+    font-size: 19px;
     margin: 0 auto;
     text-align: justify;
 }
@@ -40,7 +39,7 @@
 .yagan-word button{
     border: none;
     background: none;
-    font-size: 18px;
+    font-size: 19px;
     color: #1f7a8c;
     cursor: pointer;
     text-decoration: underline;
@@ -48,7 +47,7 @@
 }
 
 .yagan-word1{
-    font-size: 18px;
+    font-size: 19px;
     color: #1f7a8c;
     text-decoration: underline;
     cursor: pointer;
