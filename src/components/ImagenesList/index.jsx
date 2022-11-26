@@ -34,7 +34,7 @@ import image28 from '../../assets/images/click-img/28.jpg';
 import image29 from '../../assets/images/click-img/29.jpg';
 import image30 from '../../assets/images/click-img/30.jpg';
 
-const APruebaList = () => {
+const ImagenesList = () => {
     const IMAGENES = [{id: 0, fuente: image1}, {id: 1, fuente: image22}, {id: 2, fuente: image17}, {id: 3, fuente: image4}, {id: 4, fuente: image5}, 
         {id: 5, fuente: image6}, {id: 6, fuente: image7}, {id: 7, fuente: image8}, {id: 8, fuente: image9}, {id: 9, fuente: image10}, 
         {id: 10, fuente: image11}, {id: 11, fuente: image12}, {id: 12, fuente: image13}, {id: 13, fuente: image14}, {id: 14, fuente: image15},
@@ -49,7 +49,7 @@ const APruebaList = () => {
             <div className='ht-100 bg-fa'>
                 <div className='main-btn-container images-container'>
                     {
-                        IMAGENES.map(imagen => <Imagenes boton={imagen} key={imagen.id}/>)
+                        IMAGENES.map(imagen => <Imagenes img={imagen} key={imagen.id}/>)
                     }
                 </div>
             </div>
@@ -57,4 +57,4 @@ const APruebaList = () => {
     )
 }
 
-export default APruebaList;
+export default ImagenesList;

@@ -2,8 +2,8 @@ import React from 'react';
 import {useNavigate} from 'react-router-dom';
 import { useState } from 'react';
 
-const Botones = ({boton}) => {
-    const {id, fuente} = boton;
+const Imagen = ({img}) => {
+    const {id, fuente} = img;
     const [hidden, setHidden] = useState('');
     const navigate = useNavigate();
 
@@ -12,7 +12,7 @@ const Botones = ({boton}) => {
             setHidden('hidden');
         }else{
             setTimeout(function(){
-                navigate('/final');
+                navigate('/texto');
             }, 500);
         }
     }
@@ -27,4 +27,4 @@ const Botones = ({boton}) => {
     )
 }
 
-export default Botones;
+export default Imagen;
