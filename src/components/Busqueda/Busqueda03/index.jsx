@@ -117,65 +117,65 @@ const Palabras = () => {
     return (
         <div className='ht-100'>  
             <NavBar/>
-            <p className='search-text'>Seleccioná las 3 imágenes donde la canoa no esté en el agua</p>
+            <p className='search-text' data-aos="zoom-out">Seleccioná las 3 imágenes donde la canoa no esté en el agua</p>
             <div className='search-wrapper'>
-                <div className={`search-card ${imgA > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgA > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1000">
                     <img 
                         src={img1}   
                         onClick={() => checkA()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgB > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgB > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1100">
                     <img 
                         src={img5}  
                         onClick={() => checkB()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgC > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgC > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1200">
                     <img 
                         src={img9}  
                         onClick={() => checkC()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgD > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgD > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1300">
                     <img 
                         src={img4}  
                         onClick={() => checkD()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgE > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgE > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1400">
                     <img 
                         src={img2}  
                         onClick={() => checkE()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgF > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgF > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1500">
                     <img 
                         src={img6}  
                         onClick={() => checkF()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgG > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgG > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1600">
                     <img 
                         src={img7}  
                         onClick={() => checkG()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgH > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgH > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1700">
                     <img 
                         src={img8}  
                         onClick={() => checkH()}
                         alt='Imagen Yaganes'/>
                 </div>
 
-                <div className={`search-card ${imgI > 0 ? 'selected' : 'no-selected'}`}>
+                <div className={`search-card ${imgI > 0 ? 'selected' : 'no-selected'}`} data-aos="zoom-out" data-aos-duration="1800">
                     <img 
                         src={img3}
                         onClick={() => checkI()}
@@ -184,6 +184,8 @@ const Palabras = () => {
                 <button 
                     onClick={() => handleValidate()}
                     className='btn'
+                    data-aos="zoom-out"
+                    data-aos-duration="1900"
                 >
                     VALIDAR RESPUESTA
                     <img src={gif} className={loading} alt='Loading'/>

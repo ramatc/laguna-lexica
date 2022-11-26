@@ -11,8 +11,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 100px;
-    /* display: flex;
-    flex-wrap: wrap; */
 }
 
 .title-inicio,
@@ -26,7 +24,7 @@
 }
 
 .texto{
-    width: 100ch;
+    width: 95ch;
     font-size: 21px;
     margin: 0 auto;
     text-align: justify;
@@ -119,6 +117,7 @@
 .flecha-container .texto{
     text-align: left;
     padding-top: 0px;
+    width: 90ch;
 }
 
 .flecha{
