@@ -11,7 +11,7 @@ import Busqueda01 from './components/Busqueda/Busqueda01/index.jsx';
 import Busqueda02 from './components/Busqueda/Busqueda02/index.jsx';
 import Busqueda03 from './components/Busqueda/Busqueda03/index.jsx';
 import Random from './components/Random/index.jsx';
-import ClickImg from './components/ClickImg/index.jsx';
+import Imagenes from './components/ImagenesList/index.jsx';
 import Botones from './components/BotonesList/index.jsx';
 import SectionVideos from './components/SectionVideos/index.jsx';
 import ManyImgs from './components/ManyImgs/index.jsx';
@@ -110,7 +110,7 @@ function App() {
                     <Route
                         path="/imagen"
                         exact
-                        element={<ClickImg />}
+                        element={<Imagenes />}
                     />
 
                     <Route

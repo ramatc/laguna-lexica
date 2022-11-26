@@ -4,25 +4,25 @@
     padding: 25px;
 }
 
-.images-container img{
-    width: 20%;
-    height: 200px;
+.images-click{
     cursor: pointer;
 }
 
-.images-container img:hover{
+.images-click:hover{
     filter: opacity(0.5);
 }
 
 @media (min-width: 1200px) {
-    .images-container img{
+    .images-click{
         height: initial;
+    }
+    .images-click{
+        width: 20%;
     }
 }
 
 @media (min-width: 1800px) {
-    .images-container img{
+    .images-click{
         width: 10%;
     }
 }
-
