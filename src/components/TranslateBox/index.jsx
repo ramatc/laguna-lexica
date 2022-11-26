@@ -126,7 +126,7 @@ const TranslateBox = () => {
                     </div>
                 </div>
             </div>
-            <p className='last-update'>Última actualización: 25 de Noviembre de 2022</p>
+            <p className='last-update lu-tb'>Última actualización: 25 de Noviembre de 2022</p>
         </>
     )
 }
