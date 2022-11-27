@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslateContext } from '../../context/Context';
 import TranslateButton from './TranslateButton';
 import NavBarReal from '../NavBar/Real';
+import Modal from '../Modal'
 import './styles.css';
 
 import flecha from '../../assets/images/flecha.png';
@@ -110,6 +111,7 @@ const Inicio = () => {
                     pudo ver la pequeña planta seca y en la costa mucho imi de color rojo intenso. Tomó la tintura, se pintó la cara de arriba abajo, y luego miró el arbusto por un largo rato. 
                     Agarró imi y volvió en silencio a su canoa al encuentro con su familia.
                     </p>
+                    <Modal/>
                 </div>
             </div>
         </>

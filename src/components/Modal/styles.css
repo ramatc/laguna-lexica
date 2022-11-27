@@ -56,3 +56,31 @@ body.active-modal {
 .modal-content button:hover{
     border-bottom: 1px solid black;
 }
+
+.pop-img{
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.modal-img-content{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid black;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.modal-img-content button{
+    padding: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0px 30px;
+}
