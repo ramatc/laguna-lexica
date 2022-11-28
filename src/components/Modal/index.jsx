@@ -22,7 +22,7 @@ const Modal = () => {
                     <div className="modal-img-content">
                         <img src={frutilla} alt='Frutilla de Magallanes' className="pop-img"/>
                         <button onClick={handleInput}>
-                            CONTINUAR
+                            CERRAR
                         </button>
                     </div>
                 </div>
