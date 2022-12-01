@@ -1,4 +1,4 @@
-export const LETRAS = ['A', 'B', 'Ĉ', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'TS', 'TW', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+export const LETRAS = ['A', 'B', 'Ĉ', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'P', 'R', 'S', 'T', 'TS', 'TW', 'U', 'W', 'Y'];
 
 const A = ["aiiusu: ladrido fuerte",
     "aioa: tiempo de buena caza",

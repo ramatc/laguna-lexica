@@ -320,6 +320,20 @@ const ContextProvider = ({ children }) => {
     const addTranslateHome9 = () => {
         setTranslateHome9(translateHome9 + 1);
 
+        let lastTime = new Date().getTime();
+        let timeOut = 60000;
+
+        window.document.onmousemove = function () {
+            lastTime = new Date().getTime();
+        }
+
+        setInterval(() => {
+            let currentTime = new Date().getTime();
+            if (currentTime - lastTime > timeOut) {
+                window.location.href = "/";
+            }
+        }, 1000);
+
         if (translateHome2 > 0) {
             setTranslateHome2(translateHome2 + 1);
         }
